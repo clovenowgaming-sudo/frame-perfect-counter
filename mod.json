@@ -1,13 +1,22 @@
 {
     "geode": "5.11.2",
-    "gd": "2.2081",
+    "gd": {
+        "win": "2.2081",
+        "mac": "2.2081",
+        "android": "2.2081",
+        "ios": "2.2081"
+    },
     "version": "1.0.0",
     "id": "vinzgd.frameperfectcounter",
     "name": "Frame Perfect Counter",
     "developer": "VinzGD",
     "description": "Records a macro, replays it, then tests every input's timing leeway (in physics frames) and shows a frame-perfect histogram, like the 'frame perfect counter' videos on YouTube.",
     "repository": "",
-    "tags": ["gameplay", "utility", "enhancement"],
+    "tags": [
+        "gameplay",
+        "utility",
+        "enhancement"
+    ],
     "settings": {
         "max-shift-frames": {
             "name": "Max Shift (frames)",
