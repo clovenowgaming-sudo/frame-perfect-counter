@@ -1,5 +1,5 @@
 {
-    "geode": "v5.0.0",
+    "geode": ">=v5.0.0",
     "gd": "2.2081",
     "version": "1.0.0",
     "id": "vinzgd.frameperfectcounter",
