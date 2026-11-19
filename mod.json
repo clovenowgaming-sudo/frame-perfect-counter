@@ -1,0 +1,43 @@
+{
+    "geode": "v5.0.0",
+    "gd": "2.2081",
+    "version": "1.0.0",
+    "id": "vinzgd.frameperfectcounter",
+    "name": "Frame Perfect Counter",
+    "developer": "VinzGD",
+    "description": "Records a macro, replays it, then tests every input's timing leeway (in physics frames) and shows a frame-perfect histogram, like the 'frame perfect counter' videos on YouTube.",
+    "repository": "",
+    "tags": ["gameplay", "utility", "enhancement"],
+    "settings": {
+        "max-shift-frames": {
+            "name": "Max Shift (frames)",
+            "description": "How many frames before/after the recorded time to test for each input when measuring its window.",
+            "type": "int",
+            "default": 6,
+            "min": 1,
+            "max": 30
+        },
+        "test-horizon-frames": {
+            "name": "Survival Horizon (frames)",
+            "description": "How many frames after an input to keep checking for death before counting that attempt as a survive.",
+            "type": "int",
+            "default": 20,
+            "min": 5,
+            "max": 240
+        },
+        "test-speed-multiplier": {
+            "name": "Test Speed Multiplier",
+            "description": "How much to speed up the cocos2d scheduler while analyzing, so testing many inputs doesn't take forever in real time.",
+            "type": "float",
+            "default": 4.0,
+            "min": 1.0,
+            "max": 16.0
+        },
+        "analyze-log-per-input": {
+            "name": "Log Every Input's Window",
+            "description": "Write each input's measured window size to the mod's log / result file, not just the histogram.",
+            "type": "bool",
+            "default": true
+        }
+    }
+}

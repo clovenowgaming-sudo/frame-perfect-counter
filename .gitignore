@@ -1,0 +1,8 @@
+build/
+build-*/
+bin/
+*.geode
+.cache/
+.vs/
+.vscode/
+CMakeUserPresets.json
